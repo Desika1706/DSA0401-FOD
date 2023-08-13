@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+a={'months':["jan","feb","mar","apr","may"],
+'temp':[18,15,40,34,20],
+'rain':[19,23,14,20,30]}
+b=pd.DataFrame(a)
+print(b)
+b.plot(kind="line",x="months",y="temp",color="blue")
+plt.show()
+b.plot(kind="scatter",x="months",y="temp",color="blue")
+plt.grid()
+plt.show()
