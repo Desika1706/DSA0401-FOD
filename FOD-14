@@ -1,0 +1,6 @@
+import pandas as pd
+a={'age':[18,17,18,20,24,19,24,70,60]}
+b=pd.DataFrame(a)
+print(b)
+c=b['age'].value_counts()
+print("FREQUENCY",c)
