@@ -1,0 +1,9 @@
+import pandas as pd
+a={'PRODUCT NAME':["pen","pencil","lays","biscuits","lays"],
+   'quantity':[5,2,5,6,2]}
+b=pd.DataFrame(a)
+print(b)
+c=b[["PRODUCT NAME","quantity"]].groupby("PRODUCT NAME").sum()
+c.sort_values(by='quantity',ascending=False,inplace=True)
+print("Top 5 products=")
+print(c.head(5))
