@@ -1,0 +1,8 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+a=pd.read_csv("D:\Downloads\sales.csv")
+print(a)
+a.plot(kind="line",x="month",y="sales",color="red")
+plt.show()
+a.plot(kind="bar",x="month",y="sales",title="sales bar",color="blue")
+plt.show()
